@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./icon/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">
+                <i class="fas fa-hand-point-left"></i>
+                <p>CLICK ME</p>
+            </div>
+            <div class="sub-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">CAPTCHA</a></li>
+                        <li><a href="#">AVERAGE</a></li>
+                        <li><a href="#">AGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main">
+                <nav>
+                    <ul>
+                        <li id="li01"><a href="#">CAPTCHA</a></li>
+                        <li id="li02"><a href="#">AVERAGE</a></li>
+                        <li id="li03"><a href="#">AGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hover">
+                <p>HOVER ME</p>
+            </div>
+        </div>
+        <div class="captcha">
+            <h1>CAPTCHA</h1>
+            <button class="click">generate</button>
+            <div class="capt"></div>
+            <input type="text" id="cap" placeholder="type here">
+            <button class="captbtn">send</button>
+            <div class="ok">
+                <div class="icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="check">
+                    <i class="fas fa-check"></i>
+                </div>
+                <p>
+                   thank you.
+                </p>
+            </div>
+    
+            <div class="notok">
+                
+                <p>
+                   try again later.  
+                </p>
+    
+                <div>
+                    <button>ok</button>
+                </div>
+            </div>
+        </div>
+        <div class="average">
+            <div class="main">
+                <button class="click">CLICK HERE</button>
+                <div class="text">
+                    <h1 class="1">Calculating</h1>   
+                    <h1 class="mi"> your </h1>
+                    <h1 class="end">average</h1>
+                </div>
+                <div class="number">
+                    <input type="number" class="number" placeholder="Enter the number of your lessons">
+                    <button class="send1">send</button>
+                </div>
+                <div class="weight">
+                    <input type="number" class="weight" placeholder="Enter the weight of each lesson">
+                    <button class="send2">send</button>
+                </div>
+                <div class="grade">
+                    <input type="number" class="grade" placeholder="Enter your grade of each lesson">
+                    <button class="send3">send</button>
+                </div>
+                <div class="final-average">
+                    <p>Your average is</p>
+                    <div class="grade">
+                    </div>
+                </div>
+
+            </div>    
+        </div>
+        <div class="age">
+            <div class="left">
+                <div>
+                  <input class="first left" type="text" placeholder="First Name" />
+                </div>
+                <div>
+                  <input class="last left" type="text" placeholder="Last Name" />
+                </div>
+                <div>
+                  <input class="degree left" type="text" placeholder="Degree" />
+        
+                  <div class="gender">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male" /> Male
+                    <input type="radio" id="female" name="gender" value="Female" />
+                    Female
+                  </div>
+                </div>
+                <div>
+                  <input
+                    class="phone left"
+                    type="number"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div>
+                  <lable>Birthday:</lable>
+                  <input class="birth month left" type="number" placeholder="Month" />
+                  <input class="birth year left" type="number" placeholder="Year" />
+                </div>
+                <div>
+                  <input class="email left" type="email" placeholder="Email" />
+                </div>
+                <div>
+                  <input class="city left" type="text" placeholder="City" required />
+                </div>
+              </div>
+            <div class="right">
+                <h2>Your Full Name:</h2>
+                <h1 class="fullname"></h1>
+                <h2>Your Degree:</h2>
+                <h1 class="degree"></h1>
+                <h2>Your Gender:</h2>
+                <h1 class="gender"></h1>
+                <h2>Your Phone Number:</h2>
+                <h1 class="phone"></h1>
+                <h2>Your Age:</h2>
+                <h1 class="birthday year"></h1>
+                <h1 class="birthday month"></h1>
+                <h2>Your Email:</h2>
+                <h1 class="email"></h1>
+                <h2>Your City:</h2>
+                <h1 class="city"></h1>
+              </div>
+            <button>Send</button>
+            </div>
+        
+        </div>
+    </div>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

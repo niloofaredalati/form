@@ -1,0 +1,523 @@
+@font-face {
+    font-family: nil;
+    src: url(../font/samsungsharpsans-medium.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: nil;
+    color: black;
+}
+div.wrapper{
+    width: 100%;
+}
+div.wrapper>div.menu{
+    width: 100%;
+    height: 48px;
+    background-color: rgb(151, 232, 219);
+    display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(138, 214, 179, 0.78);
+
+}
+
+div.wrapper>div.menu>div.icon{
+    width: 48px;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+div.wrapper>div.menu>div.icon>div{
+    width: 60%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.825);
+    position: absolute;
+    left: calc(50% - 30%);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(138, 214, 179, 0.78);
+}
+div.wrapper>div.menu>div.icon>div:nth-of-type(1){
+    top: 12px;
+}
+
+div.wrapper>div.menu>div.icon>div:nth-of-type(2){
+    top: 22px;
+}
+div.wrapper>div.menu>div.icon>div:nth-of-type(3){
+    top: 32px;
+}
+div.wrapper>div.menu>div.text{
+    width: 180px;
+    display: flex;
+    gap: 12px;
+    padding-left: 15px;
+    margin-right: 180px;
+}
+div.wrapper>div.menu>div.text>p{
+    font-size: 20px;
+    line-height: 48px;
+}        
+div.wrapper>div.menu>div.text>i{
+    font-size: 20px;
+    line-height: 48px;
+}
+div.wrapper>div.menu>div.sub-menu{
+    width: 260px;
+    height: 130px;
+    background-color:rgb(151, 232, 219);
+    position: absolute;
+    top: 45px;
+    padding-left: 10px;
+    padding-top: 10px;
+    left: -300px;
+}
+div.wrapper>div.menu>div.sub-menu>nav{
+    width: 100%;
+}
+div.wrapper>div.menu>div.sub-menu>nav>ul>li{
+    width: 100%;
+    height: 40px;
+}
+div.wrapper>div.menu>div.sub-menu>nav>ul>li:hover{
+    background-color: rgb(132, 223, 225);
+}
+div.wrapper>div.menu>div.sub-menu>nav>ul>li>a{
+    font-size: 18px;
+}
+div.wrapper>div.menu>div.main{
+    width: 45%;
+    height: inherit;
+}
+div.wrapper>div.menu>div.main>nav{
+    width: 100%;
+}
+div.wrapper>div.menu>div.main>nav>ul{
+    display: flex;
+    justify-content: center;
+}
+div.wrapper>div.menu>div.main>nav>ul>li{
+    width: fit-content;
+    height: 48px;
+    margin: 0 20px;
+    line-height: 48px;
+}
+div.wrapper>div.menu>div.main>nav>ul>li:hover{
+    background-color: rgb(132, 223, 225);
+}
+div.wrapper>div.menu>div.main>nav>ul>li>a{
+    font-size: 18px;
+    color: black;
+}
+div.wrapper>div.menu>div.hover{
+    width: 435px;
+    position: relative;
+    cursor: pointer;
+}
+div.wrapper>div.menu>div.hover>p{
+    font-size: 20px;
+    line-height: 48px;
+    position: absolute;
+    left: 200px;
+}
+div.wrapper>div.captcha{
+    width: 100%;
+    height: calc(100vh - 48px);
+    padding-top: 50px;
+    background-color: rgb(181, 234, 223);
+}
+div.wrapper>div.average{
+    width: 100%;
+    height: calc(100vh - 48px);
+    padding-top: 50px;
+    background-color: rgb(181, 234, 223);
+}
+div.wrapper>div.age{
+    width: 100%;
+    height: calc(100vh - 48px);
+    padding-top: 50px;
+    background-color: rgb(181, 234, 223);
+}
+div.wrapper>div.captcha>h1{
+    top: 100px;
+    left: 615px;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(27, 65, 154);
+}
+div.wrapper>div.captcha>button.click{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 200px;
+    left: 685px;
+    cursor: pointer;
+    background-color: rgb(28, 92, 73);
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+}
+div.wrapper>div.captcha>div.capt{
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 440px;
+    background-color: rgb(118, 225, 193);
+    border: 1px solid rgb(28, 92, 73);
+    font-size: 40px;
+    line-height: 150px;
+    padding-left: 220px;
+    user-select: none;
+}
+div.wrapper>div.captcha>input{
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 425px;
+    left: 585px;
+    background-color: rgb(225, 237, 239);
+    border: 1px solid rgb(28, 92, 73);
+}
+div.wrapper>div.captcha>button.captbtn{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 550px;
+    left: 685px;
+    cursor: pointer;
+    background-color: rgb(28, 92, 73);
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+}
+div.wrapper>div.captcha>div.notok{
+    width: 350px;
+    height:180px;
+    background-color: rgb(255, 174, 174);
+    position: absolute;
+    z-index: 301;
+    border-radius: 20px;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    padding: 20px;
+}
+
+div.wrapper>div.captcha>div.notok>p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 70px;
+}
+
+div.wrapper>div.captcha>div.notok>div{
+    margin-top: 20px;
+    text-align: center;
+}
+
+div.wrapper>div.captcha>div.notok>div>button{
+    all: unset;
+    padding: 5px 30px;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(238, 130, 130);
+    cursor: pointer;
+    transition: 500ms;
+}
+div.wrapper>div.captcha>div.notok>div>button:hover{
+    
+    background-color: rgb(255, 215, 215);
+}
+div.wrapper>div.captcha>div.ok{
+    width: 350px;
+    height:180px;
+    background-color: rgb(120, 239, 132);
+    position: absolute;
+    border-radius: 20px;
+    top: 53px;
+    left: 20px;
+    display: none;
+}
+div.wrapper>div.captcha>div.ok>div.icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+div.wrapper>div.captcha>div.ok>div.icon>i{
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    line-height: 25px;
+}
+div.wrapper>div.captcha>div.ok>div.check{
+    width: 70px;
+    height: 70px;
+    margin: 30px auto 15px;
+    border-radius: 50%;
+    box-shadow:  0 0 15px rgb(190, 190, 190);
+    text-align: center;
+}
+div.wrapper>div.captcha>div.ok>div.check>i{
+    line-height: 70px;
+    font-size: 35px;
+    color: green;
+    filter: drop-shadow( 0 0 15px rgb(49, 128, 0));
+    -webkit-filter: drop-shadow( 0 0 15px rgb(49, 128, 0));
+}
+div.wrapper>div.captcha>div.ok>p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+/*AVERAGE*/
+div.wrapper>div.average>div.main{
+    width: 100%;
+    background-color: bisque;
+    position: relative;
+}
+div.wrapper>div.average>div.main>button.click{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    cursor: pointer;
+    background-color: rgb(28, 92, 73);
+    border: 1px solid white;
+    color: white;
+}
+div.wrapper>div.average>div.main>div.number{
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    cursor: pointer;
+    background-color: rgb(118, 225, 193);
+    border: 1px solid rgb(28, 92, 73);
+    color: white;
+    display: none;
+}
+div.wrapper>div.average>div.main>div.number>input.number{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    background-color: rgb(225, 237, 239);
+    border: 1px solid rgb(28, 92, 73);
+    color: black;
+    padding-left: 10px;
+}
+div.wrapper>div.average>div.main>div.number>button.send1{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    cursor: pointer;
+    background-color: rgb(28, 92, 73);
+    border: 1px solid white;
+    color: white;
+}
+div.wrapper>div.average>div.main>div.weight{
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    top: 230px;
+    left: 300px;
+    cursor: pointer;
+    background-color: rgb(118, 225, 193);
+    border: 1px solid rgb(28, 92, 73);
+    color: white;
+    display: none;
+}
+div.wrapper>div.average>div.main>div.weight>input.weight{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    background-color: rgb(225, 237, 239);
+    border: 1px solid rgb(28, 92, 73);
+    color: black;
+    padding-left: 10px;
+}
+div.wrapper>div.average>div.main>div.weight>button.send2{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    cursor: pointer;
+    background-color: rgb(28, 92, 73);
+    border: 1px solid white;
+    color: white;
+}
+div.wrapper>div.average>div.main>div.grade{
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    cursor: pointer;
+    background-color: rgb(118, 225, 193);
+    border: 1px solid rgb(28, 92, 73);
+    color: white;
+    display: none;
+}
+div.wrapper>div.average>div.main>div.grade>input.grade{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    background-color: rgb(225, 237, 239);
+    border: 1px solid rgb(28, 92, 73);
+    color: black;
+    padding-left: 10px;
+}
+div.wrapper>div.average>div.main>div.grade>button.send3{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    cursor: pointer;
+    background-color: rgb(28, 92, 73);
+    border: 1px solid white;
+    color: white;
+}
+div.wrapper>div.average>div.main>div.final-average{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+    cursor: pointer;
+    background-color: rgb(118, 225, 193);
+    border: 1px solid rgb(28, 92, 73);
+    color: white;
+    padding: 20px;
+    display: none;
+}
+div.wrapper>div.average>div.main>div.final-average>p{
+    margin: 10px 60px 30px 60px;
+}
+div.wrapper>div.average>div.main>div.final-average>div.grade{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(225, 237, 239);
+    border: 1px solid rgb(28, 92, 73);
+    margin-left: 93px;
+}
+div.wrapper>div.average>div.main>div.text{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left:480px;
+    padding: 20px;
+    top: 20px;
+}
+div.wrapper>div.average>div.main>div.text>h1{
+    font-size: 100px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: rgb(27, 65, 154);
+}
+div.wrapper>div.average>div.main>div.text>h1.mi{
+    padding-left: 160px;
+}
+div.wrapper>div.average>div.main>div.text>h1.end{
+    padding-left: 80px;
+}
+/*AGE*/
+div.wrapper>div.age>div.left{
+    display: inline-block;
+    vertical-align: top;
+    width: 49.5%;
+    text-align: center;
+}
+div.wrapper>div.age>div.right{
+    display: inline-block;
+    vertical-align: top;
+    width: 49.5%;
+    text-align: center;
+}
+input.left{
+    all: unset;
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    margin: 8px 5px;
+    padding: 5px;
+    background-color: rgb(225, 237, 239);
+    border: 1px solid rgb(28, 92, 73);
+    border-radius: 8px;
+    text-align: left;
+    color: rgb(51, 40, 40);
+}
+input.birth{
+    width: 70px;
+}
+div.wrapper>div.age>button{
+    all: unset;
+    background-color: rgb(28, 92, 73);;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: whitesmoke;
+    cursor: pointer;   
+    font-size: 18px;
+    transition: 500ms all linear;
+    margin-left: 750px;
+    margin-top: 30px;
+}
+div.wrapper>div.age>button>button:hover{
+    background-color: rgb(236, 234, 76);
+    color: rgb(61, 42, 42);
+}
+lable{
+    font-size: 14px; 
+}    
+div.wrapper>div.age>div.right>h2{
+    font-size: 20px;
+    color: rgb(27, 65, 154);
+}
+div.wrapper>div.age>div.right>h1{
+    font-size: 20px;
+    height: 30px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: rgba(209, 196, 196, 0.349);
+    display: inline-block;
+    width: fit-content;
+    margin-top: 8px;
+    border-radius: 8px;
+
+    
+}
+h1.birthday{
+    display: inline-block;
+    height: 37px;
+    vertical-align: top;
+}
+div.gender{
+    font-size: 15px;
+    margin: 10px 0;
+}
+input[type="radio"]{
+   margin-left:30px;
+}
